@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine App - Created by Kamute</title>
+
+  <!-- Load EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Start Container -->
+  <div id="start-container">
+    <div id="letter">Tap to Open</div>
+    <div class="watermark">Created by: Kamute</div>
+  </div>
+
+  <!-- Question Container -->
+  <div id="question-container" style="display:none;">
+    <h1 id="question">May jowa ka?</h1>
+    <div class="buttons">
+      <button id="yes-btn" onclick="handleYes()">YES</button>
+      <button id="no-btn" onclick="handleNo()">NO</button>
+    </div>
+  </div>
+
+  <!-- Message Container -->
+  <div id="message-container" style="display:none;">
+    <h1 id="message"></h1>
+  </div>
+
+  <!-- Yay Container -->
+  <div id="yay-container" style="display:none;">
+    <h1>!YAY!</h1>
+    <div id="hearts"></div>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
